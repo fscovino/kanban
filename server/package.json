@@ -1,0 +1,17 @@
+{
+  "name": "kanban-server",
+  "version": "1.0.0",
+  "description": "Node Express Server for KanBan",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "kanban"
+  ],
+  "author": "Francisco Scovino",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
