@@ -1,2 +1,2 @@
 # kanban
-A lot a code pending !!! 
+A lot of code is pending !!! 
