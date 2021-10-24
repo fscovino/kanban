@@ -1,0 +1,19 @@
+.status-bg {
+    width: 22.5%;
+    height: 95%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.status-head {
+    padding: 2px;
+    background: chartreuse;
+    width: 95%;
+    height: 32px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
