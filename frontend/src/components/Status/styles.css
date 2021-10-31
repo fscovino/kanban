@@ -3,11 +3,9 @@
     height: 95%;
     background: rgba(255, 255, 255, 0.5);
     display: flex;
-    justify-content: center;
-    align-items: space-between;
-    display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: stretch;
 }
 
 .status-head {
@@ -15,7 +13,7 @@
     background: chartreuse;
     width: 90%;
     height: 32px;
-    margin: 10px;
+    margin: 10px 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
