@@ -17,3 +17,28 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.status-title {
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.status-pending {
+    background-color: #E6FF50;
+}
+
+.status-coding {
+    background-color: #88FF50;
+}
+
+.status-testing {
+    background-color: #50FFCA;
+}
+
+.status-done {
+    background-color: #3D96FF;
+}
+
+.btn-add-task {
+    cursor: pointer;
+}

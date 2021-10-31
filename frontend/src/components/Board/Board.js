@@ -9,10 +9,10 @@ export default function Board() {
         <div className='board'>
             <Header />
             <div className='container'>
-                <Status />
-                <Status />
-                <Status />
-                <Status />
+                <Status title='pending' />
+                <Status title='coding' />
+                <Status title='testing' />
+                <Status title='done' />
             </div>
         </div>
     )
