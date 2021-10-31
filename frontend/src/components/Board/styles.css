@@ -13,3 +13,12 @@
 .container {
     height: 94%;
 }
+
+.form {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(165, 42, 42, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+}

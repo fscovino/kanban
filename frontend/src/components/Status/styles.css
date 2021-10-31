@@ -5,14 +5,17 @@
     display: flex;
     justify-content: center;
     align-items: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .status-head {
     padding: 2px;
     background: chartreuse;
-    width: 95%;
+    width: 90%;
     height: 32px;
-    margin-top: 10px;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;

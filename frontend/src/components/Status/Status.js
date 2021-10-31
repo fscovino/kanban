@@ -1,4 +1,5 @@
 import React from 'react'
+import Task from '../Task/Task';
 
 import './styles.css';
 
@@ -17,6 +18,9 @@ export default function Status(props) {
                 <img src={icon_dots} alt='icon dots' />
                 <h3 className='status-title'>{props.title}</h3>
                 <img className='btn-add-task' src={icon_plus} alt='icon dots' onClick={handleClick} />
+            </div>
+            <div className='task-list'>
+                <Task />
             </div>
         </div>
     )

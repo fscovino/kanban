@@ -14,6 +14,9 @@ export default function Board() {
                 <Status title='testing' />
                 <Status title='done' />
             </div>
+            <div className='form'>
+                
+            </div>
         </div>
     )
 }
