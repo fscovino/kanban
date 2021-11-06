@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from '../Form/Form.js';
 import Header from '../Header/Header.js';
 import Status from '../Status/Status.js';
 
@@ -14,9 +15,7 @@ export default function Board() {
                 <Status title='testing' />
                 <Status title='done' />
             </div>
-            <div className='form'>
-                
-            </div>
+            <Form />
         </div>
     )
 }

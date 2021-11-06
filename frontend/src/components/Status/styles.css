@@ -4,13 +4,12 @@
     background: rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: stretch;
 }
 
 .status-head {
     padding: 2px;
-    background: chartreuse;
     width: 90%;
     height: 32px;
     margin: 10px 12px;
@@ -25,19 +24,19 @@
 }
 
 .status-pending {
-    background-color: #E6FF50;
+    background-color: var(--sun);
 }
 
 .status-coding {
-    background-color: #88FF50;
+    background-color: var(--apple);
 }
 
 .status-testing {
-    background-color: #50FFCA;
+    background-color: var(--aqua);
 }
 
 .status-done {
-    background-color: #3D96FF;
+    background-color: var(--glue);
 }
 
 .btn-add-task {

@@ -1,19 +1,18 @@
 .task-card {
     background-color: #fff;
-    border-top: 3px solid #E6FF50;
     margin: 5px 12px;
     padding: 2px;
     width: 90%;
 }
 
 .task-title {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     margin: 2px;
 }
 
 .task-owner {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 200;
     margin: 2px;
 }
@@ -25,11 +24,27 @@
 }
 
 .task-date {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     margin: 5px 2px 2px;
 }
 
 .btn-task-open {
     cursor: pointer;
+}
+
+.card-pending {
+    border-top: 3px solid var(--sun);
+}
+
+.card-coding {
+    border-top: 3px solid var(--apple);
+}
+
+.card-testing {
+    border-top: 3px solid var(--aqua);
+}
+
+.card-done {
+    border-top: 3px solid var(--glue);
 }

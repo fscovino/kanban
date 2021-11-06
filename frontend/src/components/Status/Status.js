@@ -20,7 +20,7 @@ export default function Status(props) {
                 <img className='btn-add-task' src={icon_plus} alt='icon dots' onClick={handleClick} />
             </div>
             <div className='task-list'>
-                <Task />
+                <Task title={props.title}/>
             </div>
         </div>
     )
