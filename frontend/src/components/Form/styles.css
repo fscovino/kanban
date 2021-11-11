@@ -55,6 +55,12 @@
     padding: 0.75rem;
 }
 
+.span-15 {
+    display: inline-block;
+    width: 20%;
+    padding: 0.75rem;
+}
+
 input {
     width: 100%;
     height: 2rem;
@@ -66,4 +72,35 @@ label {
 
 textarea {
     width: 100%;
+}
+
+select {
+    height: 2rem;
+}
+
+button {
+    width: 7rem;;
+    height: 2rem;
+    margin-right: 0.75rem;
+    cursor: pointer;
+}
+
+.btn-delete {
+    border: 1px solid red;
+    color: red;
+}
+
+.btn-delete:hover {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.btn-save {
+    border: 1px solid blue;
+    color: blue;
+}
+
+.btn-save:hover {
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
 }
