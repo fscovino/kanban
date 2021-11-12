@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Form from '../Form/Form.js';
 import Header from '../Header/Header.js';
 import Status from '../Status/Status.js';
@@ -6,6 +6,13 @@ import Status from '../Status/Status.js';
 import './styles.css';
 
 export default function Board() {
+
+    const [isFormVisible, setIsFormVisible] = useState(true);
+
+    const toggleForm = () => {
+        setIsFormVisible(!isFormVisible);
+    }
+
     return (
         <div className='board'>
             <Header />
@@ -15,7 +22,7 @@ export default function Board() {
                 <Status title='testing' />
                 <Status title='done' />
             </div>
-            <Form />
+            {isFormVisible ? <Form toggleForm={toggleForm} /> : null}
         </div>
     )
 }

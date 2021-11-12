@@ -5,11 +5,7 @@ import './styles.css';
 import icon_dots from '../../img/icon_dots.svg';
 import icon_x from '../../img/icon_x.svg';
 
-function Form() {
-
-    const hideForm = () => {
-        console.log('You are trying to hide the form');
-    }
+function Form(props) {
 
     const deleteTask = () => {
         console.log('You are trying to delete the task');
@@ -26,7 +22,7 @@ function Form() {
                     <img src={icon_dots} alt="icon dots" />
                     <h2>TASK NAME <span>(task status)</span></h2>
                 </div>
-                <img className='btn-close' src={icon_x} alt="icon close" onClick={hideForm}/>
+                <img className='btn-close' src={icon_x} alt="icon close" onClick={props.toggleForm}/>
             </div>
             <form>
                 <div className="form-control span-75">
