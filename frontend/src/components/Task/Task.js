@@ -4,13 +4,18 @@ import './styles.css';
 import icon_eye from '../../img/icon_eye.svg';
 
 export default function Task(props) {
+
+    const openTask = () => {
+        props.openTask(props.task);
+    }
+
     return (
-        <div className={`task-card card-${props.title}`}>
-            <h3 className='task-title'>Create reports and folders</h3>
-            <h4 className='task-owner'>by Francisco</h4>
+        <div className={`task-card card-${props.task.status}`}>
+            <h3 className='task-title'>{props.task.title}</h3>
+            <h4 className='task-owner'>by {props.task.assignedTo}</h4>
             <div className='task-footer'>
-                <p className='task-date'>10/21/2021</p>
-                <img className='btn-task-open' src={icon_eye} alt='eye icon' />
+                <p className='task-date'>{String(props.task.date).split('T')[0]}</p>
+                <img className='btn-task-open' src={icon_eye} alt='eye icon' onClick={openTask} />
             </div>
         </div>
     )
