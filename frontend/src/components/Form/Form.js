@@ -14,7 +14,7 @@ function Form(props) {
 
     const dispatch = useDispatch();
     const [task, setTask] = useState({
-        id: '',
+        _id: '',
         title: '',
         description: '',
         date: '',
@@ -27,11 +27,11 @@ function Form(props) {
     }
 
     const saveTask = () => {
-
-        if (task.id) {
+        
+        if (task._id) {
             dispatch(updateTask(task));
         } else {
-          dispatch(createTask(task));  
+            dispatch(createTask(task));
         }
     }
 

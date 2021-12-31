@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Get the Server URL for Tasks
-const URL = 'http://localhost:3001/task/';
+const URL = 'http://localhost:3001/task';
 
 // Export the funciton to connect to the server
 export const createTask = (task) => axios.post(URL, task);

@@ -36,9 +36,9 @@ export const updateTask =  async (req, res) => {
     const _id = req.params.id;
 
     // Check if the _id is valid
-    if (!mongoose.Types.ObjectId.isValid(_id)) {
-        return res.status(404).send('No Tasks found with the ID provided...');
-    }
+    // if (!Mongoose.Types.ObjectId.isValid(_id)) {
+    //     return res.status(404).send('No Tasks found with the ID provided...');
+    // }
 
     // Update if the _id is ok
     try {

@@ -20,7 +20,7 @@ export default function Board(props) {
     const openTask = (task) => {
         
         SetCurrentTask({
-            id: task.id,
+            _id: task._id,
             title: task.title,
             description: task.description,
             date: String(task.date).split('T')[0],
