@@ -10,10 +10,10 @@ const reducer = (state=[], action) => {
             return action.payload;
 
         case 'UPDATE_TASK':
-            return state;
+            return state.map(task => task._id === action.payload._id ? action.payload : task);
 
         case 'DELETE_TASK':
-            return [state.filter(task => task._id !== action.payload._id)];
+            return state.filter(task => task._id !== action.payload._id);
 
         default:
             return state;

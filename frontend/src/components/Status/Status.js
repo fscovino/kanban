@@ -11,11 +11,14 @@ export default function Status(props) {
 
     
     const addTask = () => {
+        
+        const date = new Date();
+        const today = date.toISOString().split('T')[0];
 
         props.openTask({
             title: '',
             description: '',
-            date: '',
+            date: today,
             assignedTo: '',
             status: props.type
         });

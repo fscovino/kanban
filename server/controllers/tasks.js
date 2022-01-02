@@ -37,8 +37,8 @@ export const updateTask =  async (req, res) => {
 
     try {
         const task = req.body;
-        const updatedTask = await Task.findByIdAndUpdate(_id, task, {new: true});
-        res.json(updateTask);
+        const updatedTask = await Task.findByIdAndUpdate(_id, {...task, _id}, {new: true});
+        res.json(updatedTask);
 
     } catch (error) {
         console.log(error);
@@ -50,11 +50,12 @@ export const deleteTask = async (req, res) => {
     const _id = req.params.id;
 
     try {
-        const taskDeleted = await Task.findByIdAndDelete(_id, (err, task) => {
+        await Task.findByIdAndDelete(_id, (err, task) => {
             if (err) {
                 console.log(err);
             } else {
-                console.log('Deleted task ', task);
+                console.log('Deleted task: ', task);
+                res.json(task);
             }
         });
     } catch (error) {

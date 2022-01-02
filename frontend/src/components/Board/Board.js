@@ -13,8 +13,8 @@ export default function Board(props) {
     const [currentTask, SetCurrentTask] = useState({});
     const [isFormVisible, setIsFormVisible] = useState(false);
 
-    const toggleForm = () => {
-        setIsFormVisible(!isFormVisible);
+    const hideForm = () => {
+        setIsFormVisible(false);
     }
 
     const openTask = (task) => {
@@ -46,7 +46,7 @@ export default function Board(props) {
                 <Status type='testing' openTask={openTask} tasks={ tasks.filter((task) => task.status === 'testing') } />
                 <Status type='done' openTask={openTask} tasks={ tasks.filter((task) => task.status === 'done') } />
             </div>
-            {isFormVisible ? <Form toggleForm={toggleForm} task={currentTask} /> : null}
+            {isFormVisible ? <Form hideForm={hideForm} task={currentTask} /> : null}
         </div>
     )
 }

@@ -26,6 +26,7 @@ function Form(props) {
         if (task._id) {
             dispatch(deleteTask(task._id));
         }
+        props.hideForm();
     }
 
     const saveTask = () => {
@@ -35,6 +36,7 @@ function Form(props) {
         } else {
             dispatch(createTask(task));
         }
+        props.hideForm();
     }
 
     useEffect(() => {
@@ -48,7 +50,7 @@ function Form(props) {
                     <img src={icon_dots} alt="icon dots" />
                     <h2>TASK</h2>
                 </div>
-                <img className='btn-close' src={icon_x} alt="icon close" onClick={props.toggleForm}/>
+                <img className='btn-close' src={icon_x} alt="icon close" onClick={props.hideForm}/>
             </div>
             <form>
                 <div className="form-control span-75">
