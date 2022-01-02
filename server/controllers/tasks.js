@@ -35,12 +35,6 @@ export const getTasks =  async (req, res) => {
 export const updateTask =  async (req, res) => {
     const _id = req.params.id;
 
-    // Check if the _id is valid
-    // if (!Mongoose.Types.ObjectId.isValid(_id)) {
-    //     return res.status(404).send('No Tasks found with the ID provided...');
-    // }
-
-    // Update if the _id is ok
     try {
         const task = req.body;
         const updatedTask = await Task.findByIdAndUpdate(_id, task, {new: true});
@@ -52,6 +46,18 @@ export const updateTask =  async (req, res) => {
 }
 
 // Delete specified Task
-export const deleteTask =  (req, res) => {
-    res.send('Deleting task...');
+export const deleteTask = async (req, res) => {
+    const _id = req.params.id;
+
+    try {
+        const taskDeleted = await Task.findByIdAndDelete(_id, (err, task) => {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log('Deleted task ', task);
+            }
+        });
+    } catch (error) {
+        console.log(error);
+    }
 }

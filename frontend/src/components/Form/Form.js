@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 // Import Actions & Dispacth
 import { useDispatch } from 'react-redux';
-import { createTask, updateTask } from '../../redux/actions/tasks.js';
+import { createTask, updateTask, deleteTask } from '../../redux/actions/tasks.js';
 
 // Import Components & Styles
 import './styles.css';
@@ -22,8 +22,10 @@ function Form(props) {
         status: ''
     });
 
-    const deleteTask = () => {
-        console.log('You are trying to delete the task');
+    const removeTask = () => {
+        if (task._id) {
+            dispatch(deleteTask(task._id));
+        }
     }
 
     const saveTask = () => {
@@ -74,7 +76,7 @@ function Form(props) {
                         <option value="done">Done</option>
                     </select>
                 </div>
-                <button className='btn-delete' type="button" onClick={deleteTask}>Delete</button>
+                <button className='btn-delete' type="button" onClick={removeTask}>Delete</button>
                 <button className='btn-save' type="button" onClick={saveTask}>Save & Close</button>
             </form>
         </div>

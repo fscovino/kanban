@@ -1,6 +1,7 @@
 import * as api from '../../api';
 
-// Action Creators
+// ###### Action Creators ######
+
 // Since this action is asynchronus we need to use thunk by
 // chainning a second function: async (dispatch) => {}
 
@@ -39,6 +40,19 @@ export const updateTask = (task) => async(dispatch) => {
         const action = {type: 'UPDATE_TASK', payload: response.data};
         dispatch(action);
 
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+// Delete Task
+export const deleteTask = (id) => async(dispatch) => {
+
+    try {
+        const response = await api.deleteTask(id);
+        const action = {type: 'DELETE_TASK', payload: response.data};
+        dispatch(action);
+        
     } catch (error) {
         console.log(error);
     }

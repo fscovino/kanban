@@ -7,3 +7,4 @@ const URL = 'http://localhost:3001/task';
 export const createTask = (task) => axios.post(URL, task);
 export const getTasks = () => axios.get(URL);
 export const updateTask = (task) => axios.patch(`${URL}/${task._id}`, task);
+export const deleteTask = (id) => axios.delete(`${URL}/${id}`);

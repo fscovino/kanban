@@ -6,9 +6,6 @@ const reducer = (state=[], action) => {
         case 'CREATE_TASK':
             return [...state, action.payload];
 
-        case 'GET_TASK':
-            return state;
-
         case 'GET_TASKS':
             return action.payload;
 
@@ -16,7 +13,7 @@ const reducer = (state=[], action) => {
             return state;
 
         case 'DELETE_TASK':
-            return state;
+            return [state.filter(task => task._id !== action.payload._id)];
 
         default:
             return state;
