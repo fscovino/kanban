@@ -34,7 +34,7 @@ npm install body-parser cors dotenv express mongoose nodemon
 
 ## Screenshoot
 
-![Screenshoot](https://github.com/fscovino/kanban/kanban_screenshot_1.png)
+![Screenshoot](https://github.com/fscovino/kanban/blob/main/kanban_screenshot_1.png)
 
 ## Author
 
