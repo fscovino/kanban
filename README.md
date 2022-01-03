@@ -1,5 +1,5 @@
 
-# Kanban (M.E.R.N)  |  [VIEW LIVE](https://kanban-scovino.netlify.app/)  |  Hosted at: https://kanban-scovino.netlify.app/
+# Kanban (M.E.R.N)  |  [VIEW LIVE](https://kanban-scovino.netlify.app/)
 
 This web application allows developers to organize their project tasks and change their stage based on (pending, coding, testing, and done) categories.
 
@@ -8,7 +8,7 @@ Version 1.0 - *Created on December, 2021*
 
 ## Deployment
 
-* Frontend (React JS) deployed on Netlify
+* Frontend (React JS) deployed on Netlify - https://kanban-scovino.netlify.app/
 * Backend (Express JS) deployed on Heroku
 * Database (MongoDB) hosted on MongoDB Atlas 
 
