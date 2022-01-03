@@ -1,5 +1,5 @@
 
-# Kanban (M.E.R.N)
+# Kanban (M.E.R.N) | [VIEW LIVE @ kanban-scovino.netlify.app] (https://kanban-scovino.netlify.app/)
 
 This web application allows developers to organize their project tasks and change their stage based on (pending, coding, testing, and done) categories.
 
