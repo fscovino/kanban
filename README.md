@@ -38,5 +38,5 @@ npm install body-parser cors dotenv express mongoose nodemon
 
 ## Author
 
-**Francisco Scovino** | *Systems Analyst & Programmer* | [franciscoscovino@gmail.com](mailto:franciscoscovino@gmail.com) | (Miramar - Florida (US))
+**Francisco Scovino** | *Web Developer & Programmer* | [franciscoscovino@gmail.com](mailto:franciscoscovino@gmail.com) | (Miramar - Florida (US))
 
