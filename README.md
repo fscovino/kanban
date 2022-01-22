@@ -1,7 +1,7 @@
 
 # Kanban (M.E.R.N)  |  [VIEW LIVE](https://kanban-scovino.netlify.app/)
 
-Notes: Once you open it on the browser wait a few second for it to load data
+Note: Once you open it on the browser wait a few seconds for it to load data
 
 This web application allows developers to organize their project tasks and change their status based on (pending, coding, testing, and done) categories.
 
